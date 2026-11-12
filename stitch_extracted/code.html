@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apex Health Care Plus | Compassionate Care &amp; Community Wellness in Jajpur</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#00685f",
+            "primary-hover": "#00534c",
+            "primary-container": "#008378",
+            "on-primary-container": "#f4fffc",
+            "primary-fixed": "#89f5e7",
+            "primary-fixed-dim": "#6bd8cb",
+            secondary: "#006398",
+            "secondary-container": "#e0f2fe",
+            tertiary: "#006948",
+            "tertiary-fixed": "#85f8c4",
+            "tertiary-container": "#e6f8f1",
+            surface: "#faf8ff",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f4f8f7",
+            "surface-container": "#ebf3f1",
+            "surface-container-high": "#e1ece9",
+            "surface-variant": "#dceae7",
+            "background-light": "#f6faf9",
+            "background-dark": "#0a1517",
+            "card-light": "#ffffff",
+            "card-dark": "#112023",
+            "card-mint": "#f0fdf9"
+          },
+          fontFamily: {
+            sans: ["'Plus Jakarta Sans'", "sans-serif"],
+            display: ["'Plus Jakarta Sans'", "sans-serif"]
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            "2xl": "1.25rem",
+            "3xl": "1.75rem",
+            "4xl": "2.25rem"
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1;
+    }
+  </style>
+</head>
+<body class="font-sans bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 antialiased selection:bg-teal-600 selection:text-white transition-colors duration-200">
+<!-- Soft Top Notice & Direct Connect Bar -->
+<header class="bg-white/90 dark:bg-slate-900/90 border-b border-teal-100 dark:border-slate-800/80 text-xs sm:text-sm py-2.5 backdrop-blur-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-2">
+<div class="flex items-center flex-wrap justify-center gap-3 sm:gap-5 text-slate-600 dark:text-slate-300">
+<span class="inline-flex items-center gap-1.5 font-medium bg-teal-50/80 dark:bg-teal-950/60 text-teal-800 dark:text-teal-200 px-3 py-1 rounded-full border border-teal-100 dark:border-teal-900/60">
+<span class="material-symbols-outlined text-primary text-[17px]">location_on</span>
+          Near Medical Square, Town Center, Jajpur
+        </span>
+<span class="inline-flex items-center gap-1.5 text-slate-600 dark:text-slate-400">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">verified</span>
+          OPD: 8:00 AM – 9:00 PM • 24/7 Emergency
+        </span>
+</div>
+<div class="flex items-center gap-3 sm:gap-4 text-slate-700 dark:text-slate-300">
+<a class="inline-flex items-center gap-1 font-bold text-teal-800 dark:text-teal-200 hover:text-primary transition-colors" href="tel:8917576318">
+<span class="material-symbols-outlined text-primary text-[18px]">call</span>
+<span>8917576318</span>
+</a>
+<span class="text-slate-300 dark:text-slate-700">|</span>
+<a class="inline-flex items-center gap-1.5 text-emerald-700 dark:text-emerald-300 font-semibold bg-emerald-50 dark:bg-emerald-950/60 px-2.5 py-1 rounded-full hover:bg-emerald-100 transition-colors" href="https://wa.me/918917576318" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[17px]">chat</span>
+<span>WhatsApp Clinic Help</span>
+</a>
+<button aria-label="Toggle Theme" class="p-1.5 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 dark:text-slate-400 transition-colors ml-1" id="theme-toggle">
+<span class="material-symbols-outlined text-[18px] dark:hidden">dark_mode</span>
+<span class="material-symbols-outlined text-[18px] hidden dark:inline">light_mode</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Clinic Navigation Bar with Gentle Curves -->
+<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-100 dark:border-slate-800/80">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<a class="flex items-center gap-3.5 group" href="#">
+<div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-primary to-teal-500 flex items-center justify-center text-white shadow-md shadow-primary/20 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined fill text-2xl">favorite</span>
+</div>
+<div>
+<div class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white flex items-center">
+              Apex Health<span class="text-primary ml-1.5 font-black">Care Plus</span>
+</div>
+<p class="text-[11px] font-semibold tracking-wider text-teal-700 dark:text-teal-400">
+              Community Health &amp; Multi-Specialty Clinic • Jajpur
+            </p>
+</div>
+</a>
+<div class="hidden lg:flex items-center gap-7 font-medium text-slate-700 dark:text-slate-300 text-[15px]">
+<a class="text-primary font-bold hover:text-primary transition-colors" href="#">Home</a>
+<a class="hover:text-primary transition-colors" href="#services">Specialized Care</a>
+<a class="hover:text-primary transition-colors" href="#packages">Wellness Packages</a>
+<a class="hover:text-primary transition-colors" href="#about">About Clinic</a>
+<a class="hover:text-primary transition-colors" href="#location">Find Us</a>
+</div>
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-2 rounded-xl text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors" href="tel:8917576318">
+<span class="material-symbols-outlined text-rose-500 text-[18px]">e911_emergency</span>
+<span>24/7 Helpline</span>
+</a>
+<a class="bg-primary hover:bg-primary-hover text-white text-sm font-bold px-5 py-2.5 sm:px-6 sm:py-3 rounded-2xl shadow-md shadow-primary/20 hover:shadow-lg transition-all flex items-center gap-2" href="#appointment">
+<span>Book Visit</span>
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section: Warm Centered Headline & Expansive Curved Visual Frame -->
+<section class="relative pt-12 pb-16 lg:pt-16 lg:pb-24 overflow-hidden bg-gradient-to-b from-teal-50/60 via-white to-background-light dark:from-slate-900/60 dark:via-background-dark dark:to-background-dark">
+<!-- Soft Decorative Glows -->
+<div class="absolute top-12 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-teal-200/25 dark:bg-teal-900/15 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-48 right-10 w-80 h-80 bg-emerald-200/20 dark:bg-emerald-800/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<!-- Centered Warm Headline Block -->
+<div class="text-center max-w-3xl mx-auto space-y-4 mb-10 lg:mb-12">
+<div class="inline-flex items-center gap-2 bg-white dark:bg-slate-800 shadow-xs border border-teal-100 dark:border-teal-900/60 px-4 py-1.5 rounded-full text-xs sm:text-sm font-semibold text-primary">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">volunteer_activism</span>
+<span>Welcoming Families Across Jajpur with Warmth &amp; Excellence</span>
+</div>
+<h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-[1.15]">
+          Compassionate Care, <br class="hidden sm:inline"/>
+<span class="text-primary bg-clip-text">Advanced Healing</span> in Jajpur
+        </h1>
+<p class="text-base sm:text-lg text-slate-600 dark:text-slate-300 font-normal leading-relaxed max-w-2xl mx-auto">
+          At Apex Health Care Plus, every patient is treated like family. Experience compassionate doctors, prompt zero-wait outpatient consultations, 24/7 emergency response, and state-of-the-art diagnostic facilities in Town Center, Jajpur.
+        </p>
+<!-- CTA Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-3.5 pt-2">
+<a class="bg-primary hover:bg-primary-hover text-white font-bold text-sm sm:text-base px-7 py-3.5 rounded-2xl shadow-lg shadow-primary/25 hover:scale-[1.02] transition-all flex items-center gap-2" href="#appointment">
+<span>Schedule Doctor Consultation</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-950/70 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-emerald-800 dark:text-emerald-200 border border-emerald-200 dark:border-emerald-800/80 font-bold text-sm sm:text-base px-6 py-3.5 rounded-2xl transition-all" href="https://wa.me/918917576318" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-emerald-600 dark:text-emerald-400 text-[20px]">chat</span>
+<span>Direct WhatsApp Booking</span>
+</a>
+</div>
+</div>
+<!-- Expansive Curved Visual Frame -->
+<div class="relative max-w-5xl mx-auto">
+<div class="relative rounded-3xl sm:rounded-4xl overflow-hidden shadow-2xl border-4 border-white dark:border-slate-800 bg-white dark:bg-slate-800">
+<img alt="Friendly professional male doctor in white lab coat with stethoscope around neck smiling warmly in modern high-end hospital clinic background, bright clean daylight lighting, teal medical ambiance, photorealistic, sharp focus" class="w-full h-[380px] sm:h-[480px] md:h-[520px] object-cover object-top" src="https://lh3.googleusercontent.com/aida/ALJJyrCHTba_eHvPq-zLKaSZPoFQDSYNTqN_4QiJj5dAQoPc9O368rqhqe9KFeByYTOlOqMWxRSdnpatCSASHv6dlP81C0GBF8BSuMWLO20YGjX3AYQ32ddMiNpmZ6tcg7U47Evyg02c4NAbJSO0vt17vEAA3N2NIt19quET1WAemYEsTKunCejaRZq3cjvfzjVNGwM-2BeQByJ08nqiiCqCU56NhfTZoNzDYAOUmcaOK2prpA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/20 to-transparent"></div>
+<!-- Bottom Banner Inside Frame -->
+<div class="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md p-4 sm:p-5 rounded-2xl border border-white/60 dark:border-slate-700/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3.5">
+<div class="w-12 h-12 rounded-xl bg-teal-50 dark:bg-teal-950 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-2xl">medical_services</span>
+</div>
+<div>
+<h4 class="text-sm sm:text-base font-bold text-slate-900 dark:text-white">Senior Specialist &amp; OPD Care Team</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400">Dr. Michael Chen &amp; Panel of Senior Consultants • Daily Clinics in Jajpur</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 text-xs font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-emerald-600">timer</span>
+                Zero-Wait Prior Booking
+              </span>
+<a class="bg-primary hover:bg-primary-hover text-white text-xs font-bold px-4 py-2 rounded-xl transition-colors shrink-0" href="#appointment">
+                Consult Now
+              </a>
+</div>
+</div>
+</div>
+<!-- Floating Badges on Visual Frame -->
+<div class="absolute -top-4 -left-2 sm:-left-6 bg-white dark:bg-slate-800 p-3.5 sm:p-4 rounded-2xl shadow-xl border border-teal-100 dark:border-slate-700 flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-amber-50 dark:bg-amber-950/60 flex items-center justify-center text-amber-500 shrink-0">
+<span class="material-symbols-outlined text-2xl fill">star</span>
+</div>
+<div>
+<div class="text-sm font-extrabold text-slate-900 dark:text-white">4.9 / 5 Rating</div>
+<div class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">12,000+ Happy Patients in Jajpur</div>
+</div>
+</div>
+<div class="absolute -bottom-4 -right-2 sm:-right-6 bg-white dark:bg-slate-800 p-3.5 sm:p-4 rounded-2xl shadow-xl border border-teal-100 dark:border-slate-700 flex items-center gap-3">
+<div class="w-11 h-11 rounded-xl bg-rose-50 dark:bg-rose-950/60 flex items-center justify-center text-rose-600 shrink-0 animate-pulse">
+<span class="material-symbols-outlined text-2xl">e911_emergency</span>
+</div>
+<div>
+<div class="text-xs font-bold uppercase tracking-wider text-rose-600">24/7 Emergency ICU</div>
+<a class="text-sm font-extrabold text-slate-900 dark:text-white hover:text-primary transition-colors" href="tel:8917576318">Call 8917576318</a>
+</div>
+</div>
+</div>
+<!-- Quick Trust Indicators Metric Bar -->
+<div class="mt-14 max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm p-4 rounded-2xl border border-teal-50 dark:border-slate-800 text-center shadow-xs">
+<div class="text-2xl font-black text-primary">15+</div>
+<div class="text-xs font-semibold text-slate-600 dark:text-slate-400 mt-0.5">Specialist Doctors</div>
+</div>
+<div class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm p-4 rounded-2xl border border-teal-50 dark:border-slate-800 text-center shadow-xs">
+<div class="text-2xl font-black text-primary">12,000+</div>
+<div class="text-xs font-semibold text-slate-600 dark:text-slate-400 mt-0.5">Patients Treated</div>
+</div>
+<div class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm p-4 rounded-2xl border border-teal-50 dark:border-slate-800 text-center shadow-xs">
+<div class="text-2xl font-black text-primary">100%</div>
+<div class="text-xs font-semibold text-slate-600 dark:text-slate-400 mt-0.5">Sterilized Wards</div>
+</div>
+<div class="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm p-4 rounded-2xl border border-teal-50 dark:border-slate-800 text-center shadow-xs">
+<div class="text-2xl font-black text-primary">24 / 7</div>
+<div class="text-xs font-semibold text-slate-600 dark:text-slate-400 mt-0.5">Ambulance &amp; Trauma</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Specialized Care Modular Grid with Soft Colored Pill Badges -->
+<section class="py-16 lg:py-24 bg-white dark:bg-slate-900/70" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-2xl mx-auto mb-14">
+<span class="inline-block bg-teal-50 dark:bg-teal-950/70 text-primary border border-teal-200/60 dark:border-teal-800/60 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-3">
+          Specialized Clinical Departments
+        </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+          Comprehensive Health Services Designed for You
+        </h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-3 leading-relaxed">
+          From gentle infant care to modern cardiac assessments, our multi-specialty departments offer seamless diagnostic and clinical expertise under one roof.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+<!-- Pediatrics & Child Health -->
+<div class="bg-card-light dark:bg-card-dark p-7 rounded-3xl border border-slate-200/80 dark:border-slate-800 hover:border-teal-300 dark:hover:border-teal-700 shadow-xs hover:shadow-xl transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-14 h-14 rounded-2xl bg-amber-50 dark:bg-amber-950/60 text-amber-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">child_care</span>
+</div>
+<span class="bg-amber-100 text-amber-800 dark:bg-amber-950/80 dark:text-amber-300 text-xs font-bold px-3 py-1 rounded-full">
+                Pediatrics &amp; Immunization
+              </span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+              Pediatrics &amp; Child Health
+            </h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+              Warm, compassionate child examinations, routine immunization schedules, pediatric nutrition guidance, growth tracking, and 24/7 child urgent care.
+            </p>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+<a class="text-sm font-bold text-primary hover:text-primary-hover inline-flex items-center gap-1" href="#appointment">
+              Book Pediatric Slot <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-xs text-slate-400 font-medium">Daily Clinic</span>
+</div>
+</div>
+<!-- Cardiology & Heart Care -->
+<div class="bg-card-light dark:bg-card-dark p-7 rounded-3xl border border-slate-200/80 dark:border-slate-800 hover:border-teal-300 dark:hover:border-teal-700 shadow-xs hover:shadow-xl transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-14 h-14 rounded-2xl bg-rose-50 dark:bg-rose-950/60 text-rose-600 flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">cardiology</span>
+</div>
+<span class="bg-rose-100 text-rose-800 dark:bg-rose-950/80 dark:text-rose-300 text-xs font-bold px-3 py-1 rounded-full">
+                Heart Wellness
+              </span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+              Cardiology &amp; Heart Care
+            </h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+              High-precision 12-lead ECG, 2D Echocardiogram, hypertension management, preventive heart risk checkups, and consultations by expert cardiologists.
+            </p>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+<a class="text-sm font-bold text-primary hover:text-primary-hover inline-flex items-center gap-1" href="#appointment">
+              Cardiology Consult <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-xs text-slate-400 font-medium">Senior Doctors</span>
+</div>
+</div>
+<!-- General Medicine & OPD -->
+<div class="bg-card-light dark:bg-card-dark p-7 rounded-3xl border border-slate-200/80 dark:border-slate-800 hover:border-teal-300 dark:hover:border-teal-700 shadow-xs hover:shadow-xl transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-14 h-14 rounded-2xl bg-teal-50 dark:bg-teal-950/60 text-primary flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">stethoscope</span>
+</div>
+<span class="bg-teal-100 text-teal-800 dark:bg-teal-950/80 dark:text-teal-300 text-xs font-bold px-3 py-1 rounded-full">
+                Daily OPD 8am-9pm
+              </span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+              General Medicine &amp; OPD
+            </h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+              Family general physician services, chronic illness management (Diabetes, Blood Pressure, Thyroid, Asthma), seasonal fever care, and health counseling.
+            </p>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+<a class="text-sm font-bold text-primary hover:text-primary-hover inline-flex items-center gap-1" href="#appointment">
+              Book General OPD <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-xs text-slate-400 font-medium">Walk-ins Welcome</span>
+</div>
+</div>
+<!-- Digital Radiology & Diagnostics (Featuring IMAGE_6) -->
+<div class="bg-card-light dark:bg-card-dark p-7 rounded-3xl border border-slate-200/80 dark:border-slate-800 hover:border-teal-300 dark:hover:border-teal-700 shadow-xs hover:shadow-xl transition-all flex flex-col justify-between group md:col-span-2 lg:col-span-1">
+<div>
+<div class="relative w-full h-36 rounded-2xl overflow-hidden mb-4 border border-slate-100 dark:border-slate-800">
+<img alt="Modern clinical medical equipment in modern hospital examination room, clean white and cyan medical room, advanced digital radiology and diagnostics setup, high quality realistic photography" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida/AEtjO1XS-2tXcJg3Ll6Fla5gLf4zIBbnasyDLvcRhdscgxqDIPKEwN4YUSqZIOPPZs1aXz7ebUqRs7LZgRsftzIGHdXvarsjELLShH54LgbHEpfE9uL4NYSS6CnQgFEd8NUusNP0gdBS-tzWtDslNwyBJ-csUCL4KxB1-uccQOFbNl16UWfM3GmwG8HxHJlK6jGdYPzB7ObSbJwn7FO3J-roaBjJxtIcwylWUNghXMUmXKey"/>
+<div class="absolute inset-0 bg-primary/15 mix-blend-multiply"></div>
+<div class="absolute top-2 right-2 bg-white/90 dark:bg-slate-900/90 text-primary font-bold text-[11px] px-2.5 py-0.5 rounded-full shadow-xs">
+                Digital Imaging
+              </div>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+              Digital X-Ray &amp; Radiology
+            </h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+              Low-radiation digital radiography, high-resolution ultrasonography (USG), automated digital pathology tests, and fast report turnaround.
+            </p>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+<a class="text-sm font-bold text-primary hover:text-primary-hover inline-flex items-center gap-1" href="#appointment">
+              Book Imaging Scan <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-xs text-emerald-600 font-semibold">Same-Day Reports</span>
+</div>
+</div>
+<!-- Orthopedics & Joint Care -->
+<div class="bg-card-light dark:bg-card-dark p-7 rounded-3xl border border-slate-200/80 dark:border-slate-800 hover:border-teal-300 dark:hover:border-teal-700 shadow-xs hover:shadow-xl transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-14 h-14 rounded-2xl bg-sky-50 dark:bg-sky-950/60 text-secondary flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">orthopedics</span>
+</div>
+<span class="bg-sky-100 text-sky-800 dark:bg-sky-950/80 dark:text-sky-300 text-xs font-bold px-3 py-1 rounded-full">
+                Bone &amp; Joint Health
+              </span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+              Orthopedics &amp; Joint Care
+            </h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+              Fracture treatment, arthritis care, back pain and spine assessments, sports injuries, joint mobility therapy, and post-injury physiotherapy.
+            </p>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+<a class="text-sm font-bold text-primary hover:text-primary-hover inline-flex items-center gap-1" href="#appointment">
+              Orthopedic Booking <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-xs text-slate-400 font-medium">Fracture Clinic</span>
+</div>
+</div>
+<!-- Operation Theater (OT) & General Surgery -->
+<div class="bg-card-light dark:bg-card-dark p-7 rounded-3xl border border-slate-200/80 dark:border-slate-800 hover:border-teal-300 dark:hover:border-teal-700 shadow-xs hover:shadow-xl transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-center justify-between mb-5">
+<div class="w-14 h-14 rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 flex items-center justify-center group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-3xl">medical_information</span>
+</div>
+<span class="bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 text-xs font-bold px-3 py-1 rounded-full">
+                Sterile Modular OT
+              </span>
+</div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+              Operation Theater &amp; Surgery
+            </h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+              Laminar air-flow sterile surgical theater, minor daycare surgeries, laparoscopic interventions, emergency trauma care, and dedicated post-operative monitoring.
+            </p>
+</div>
+<div class="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex items-center justify-between">
+<a class="text-sm font-bold text-primary hover:text-primary-hover inline-flex items-center gap-1" href="#appointment">
+              Surgical Consultation <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="text-xs text-slate-400 font-medium">Trauma Care 24/7</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Wellness & Prevention Feature Banner (₹499 Complete Body Checkup) -->
+<section class="py-16 lg:py-20 bg-gradient-to-br from-teal-50 via-mint-50 to-emerald-50/50 dark:from-slate-950 dark:via-slate-900 dark:to-teal-950/30" id="packages">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white dark:bg-card-dark rounded-3xl sm:rounded-4xl p-8 sm:p-12 shadow-xl border border-teal-100 dark:border-slate-800">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Left Details -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 bg-emerald-50 dark:bg-emerald-950/70 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 px-3.5 py-1 rounded-full text-xs font-bold tracking-wide">
+<span class="material-symbols-outlined text-[16px]">health_and_safety</span>
+<span>Preventive Community Wellness Initiative • Jajpur</span>
+</div>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-snug">
+              Complete Preventive Health Checkup for Only <span class="text-emerald-600 dark:text-emerald-400">₹499</span>
+</h2>
+<p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+              Early detection protects families. Our subsidized community preventive health package gives you a 360° health overview with fast digital diagnostic reports and personalized physician consultation.
+            </p>
+<!-- Test Breakdown Grid -->
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
+<div class="p-3 rounded-2xl bg-teal-50/60 dark:bg-slate-800/60 border border-teal-100 dark:border-slate-700/60 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="text-xs font-bold text-slate-800 dark:text-slate-200">Complete Blood Count (CBC)</span>
+</div>
+<div class="p-3 rounded-2xl bg-teal-50/60 dark:bg-slate-800/60 border border-teal-100 dark:border-slate-700/60 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="text-xs font-bold text-slate-800 dark:text-slate-200">Blood Sugar (Fasting)</span>
+</div>
+<div class="p-3 rounded-2xl bg-teal-50/60 dark:bg-slate-800/60 border border-teal-100 dark:border-slate-700/60 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="text-xs font-bold text-slate-800 dark:text-slate-200">Lipid Profile (Cholesterol)</span>
+</div>
+<div class="p-3 rounded-2xl bg-teal-50/60 dark:bg-slate-800/60 border border-teal-100 dark:border-slate-700/60 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="text-xs font-bold text-slate-800 dark:text-slate-200">Liver Function (LFT)</span>
+</div>
+<div class="p-3 rounded-2xl bg-teal-50/60 dark:bg-slate-800/60 border border-teal-100 dark:border-slate-700/60 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="text-xs font-bold text-slate-800 dark:text-slate-200">Kidney Function (KFT)</span>
+</div>
+<div class="p-3 rounded-2xl bg-teal-50/60 dark:bg-slate-800/60 border border-teal-100 dark:border-slate-700/60 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+<span class="text-xs font-bold text-slate-800 dark:text-slate-200">Doctor Consultation</span>
+</div>
+</div>
+<!-- Family Package Benefits -->
+<div class="p-4 rounded-2xl bg-emerald-50/90 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800/70 flex items-start gap-3">
+<span class="material-symbols-outlined text-emerald-700 dark:text-emerald-400 text-2xl shrink-0 mt-0.5">diversity_1</span>
+<div>
+<h4 class="text-xs font-bold text-emerald-900 dark:text-emerald-200 uppercase tracking-wide">Family Wellness Benefits</h4>
+<p class="text-xs text-emerald-800 dark:text-emerald-300 mt-0.5">
+                  Book for 2 or more family members to receive complimentary home sample collection across Jajpur Town Center and priority OPD consultation slots.
+                </p>
+</div>
+</div>
+</div>
+<!-- Right Pricing Card -->
+<div class="lg:col-span-5">
+<div class="bg-gradient-to-br from-teal-700 to-primary p-7 sm:p-9 rounded-3xl text-white shadow-xl relative overflow-hidden">
+<div class="absolute -right-8 -top-8 w-44 h-44 bg-white/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10 space-y-5">
+<span class="bg-white/20 backdrop-blur-xs text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full inline-block">
+                  Special Jajpur Community Offer
+                </span>
+<div>
+<div class="text-sm text-teal-100 font-medium">Comprehensive Checkup Package</div>
+<div class="text-5xl font-black tracking-tight text-white mt-1">₹499 <span class="text-sm font-normal text-teal-200">/ person</span></div>
+<div class="text-xs text-teal-200 line-through mt-0.5">Regular Price: ₹1,500</div>
+</div>
+<ul class="space-y-2 text-xs text-teal-50">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-teal-200">verified</span>
+                    Zero hidden charges, reports on WhatsApp
+                  </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-teal-200">verified</span>
+                    One-on-one session with Senior Physician
+                  </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-teal-200">verified</span>
+                    Dietary and wellness lifestyle plan included
+                  </li>
+</ul>
+<div class="pt-2 space-y-2.5">
+<a class="w-full bg-white hover:bg-teal-50 text-primary font-extrabold text-sm py-3.5 px-4 rounded-2xl shadow-md transition-all text-center block" href="#appointment">
+                    Reserve ₹499 Health Package
+                  </a>
+<a class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs py-2.5 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-1.5" href="https://wa.me/918917576318?text=Hello%20Apex%20Health%20Care%20Plus,%20I%20would%20like%20to%20book%20the%20499%20Health%20Package." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Book via WhatsApp: 8917576318</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Frictionless Patient Experience & Booking Section -->
+<section class="py-16 lg:py-24 bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800" id="appointment">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+<!-- Left Column: Friendly Patient Guidance & Clinic Details -->
+<div class="lg:col-span-5 space-y-6">
+<div>
+<span class="inline-block bg-teal-50 dark:bg-teal-950/70 text-primary border border-teal-200 dark:border-teal-800 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full mb-3">
+              Patient Care Desk
+            </span>
+<h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              We're Here to Guide You Every Step of the Way
+            </h2>
+<p class="text-slate-600 dark:text-slate-400 text-sm mt-3 leading-relaxed">
+              Booking an appointment at Apex Health Care Plus takes less than a minute. Our care coordinators ensure minimal waiting, courteous assistance, and straightforward directions.
+            </p>
+</div>
+<!-- Clinic Location & Reach Info Card -->
+<div class="p-6 rounded-3xl bg-background-light dark:bg-card-dark border border-teal-100 dark:border-slate-800 space-y-4" id="location">
+<h3 class="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">pin_drop</span>
+              How to Find Us in Jajpur
+            </h3>
+<p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+              Located conveniently near <strong class="text-slate-900 dark:text-white font-bold">Medical Square, Town Center, Jajpur, Odisha</strong>. Easily accessible with spacious parking and wheelchair-friendly entrances.
+            </p>
+<div class="pt-2 border-t border-slate-200/70 dark:border-slate-800 grid grid-cols-2 gap-3 text-xs">
+<div>
+<span class="text-slate-400 block font-medium">Daily Outpatient OPD:</span>
+<span class="font-bold text-slate-800 dark:text-slate-200">8:00 AM – 9:00 PM</span>
+</div>
+<div>
+<span class="text-slate-400 block font-medium">Trauma &amp; Emergency:</span>
+<span class="font-bold text-emerald-600 dark:text-emerald-400">Open 24 Hours / 7 Days</span>
+</div>
+</div>
+</div>
+<!-- Direct Helpline Contact Card -->
+<div class="p-6 rounded-3xl bg-teal-50 dark:bg-teal-950/40 border border-teal-200/70 dark:border-teal-800/60 space-y-3">
+<h4 class="text-xs font-bold uppercase tracking-wider text-teal-900 dark:text-teal-200">Direct Patient Support</h4>
+<div class="flex flex-col sm:flex-row gap-3">
+<a class="flex-1 flex items-center gap-2.5 bg-white dark:bg-slate-800 p-3 rounded-2xl border border-teal-100 dark:border-slate-700 text-xs font-bold text-slate-800 dark:text-slate-100 hover:border-primary transition-colors" href="tel:8917576318">
+<span class="material-symbols-outlined text-primary text-[20px]">call</span>
+<span>Call: 8917576318</span>
+</a>
+<a class="flex-1 flex items-center gap-2.5 bg-white dark:bg-slate-800 p-3 rounded-2xl border border-teal-100 dark:border-slate-700 text-xs font-bold text-emerald-700 dark:text-emerald-400 hover:border-emerald-500 transition-colors" href="https://wa.me/918917576318" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-emerald-600 text-[20px]">chat</span>
+<span>WhatsApp Help</span>
+</a>
+</div>
+<p class="text-[11px] text-slate-500 dark:text-slate-400">
+              Email inquiries: <a class="text-primary hover:underline font-semibold" href="mailto:apexhealthcareplus@gmail.com">apexhealthcareplus@gmail.com</a>
+</p>
+</div>
+</div>
+<!-- Right Column: Frictionless Booking Form Card -->
+<div class="lg:col-span-7">
+<div class="bg-card-light dark:bg-card-dark rounded-3xl sm:rounded-4xl shadow-xl border border-teal-100 dark:border-slate-800 p-7 sm:p-10">
+<div class="mb-8">
+<div class="flex items-center gap-2.5 text-primary mb-1">
+<span class="material-symbols-outlined text-2xl">edit_calendar</span>
+<span class="text-xs font-bold uppercase tracking-wider">Fast Appointment Request</span>
+</div>
+<h3 class="text-2xl font-black text-slate-900 dark:text-white">
+                Schedule a Consultation with Our Doctors
+              </h3>
+<p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-1">
+                Our front desk confirms all bookings within 15 minutes. No advance payment required online.
+              </p>
+</div>
+<form class="space-y-5" id="appointment-form" onsubmit="event.preventDefault(); handleBooking();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2" for="name">
+                    Patient Name *
+                  </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[18px]">person</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" id="name" placeholder="e.g. Ramesh Mohapatra" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2" for="phone">
+                    Phone / WhatsApp *
+                  </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[18px]">call</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" id="phone" pattern="[0-9]{10}" placeholder="10-digit number (e.g. 8917576318)" required="" type="tel"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2" for="department">
+                    Specialty / Department *
+                  </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[18px]">local_hospital</span>
+<select class="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" id="department" required="">
+<option value="">Select Specialty</option>
+<option value="Pediatrics">Pediatrics &amp; Child Health</option>
+<option value="Cardiology">Cardiology &amp; ECG</option>
+<option value="Medicine">General Medicine &amp; OPD</option>
+<option value="Orthopedics">Orthopedics &amp; Joint Care</option>
+<option value="Radiology">Digital X-Ray &amp; Radiology</option>
+<option value="Surgery">General Surgery &amp; OT</option>
+<option value="HealthCheckup">Preventive Health Package (₹499)</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2" for="date">
+                    Preferred Visit Date *
+                  </label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-[18px]">calendar_today</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" id="date" required="" type="date"/>
+</div>
+</div>
+</div>
+<div>
+<label class="block text-xs font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2" for="notes">
+                  Symptoms or Special Request (Optional)
+                </label>
+<textarea class="w-full px-4 py-3 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white text-sm focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none" id="notes" placeholder="Briefly mention health concerns, prior doctor prescriptions, or test preferences..." rows="3"></textarea>
+</div>
+<div class="pt-2">
+<button class="w-full bg-primary hover:bg-primary-hover text-white font-extrabold text-sm sm:text-base py-4 rounded-2xl shadow-lg shadow-primary/25 transition-all flex items-center justify-center gap-2" type="submit">
+<span>Confirm Appointment Slot</span>
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+</button>
+<div class="text-center mt-3 text-xs text-slate-500 dark:text-slate-400 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-[16px]">lock</span>
+<span>Your medical information remains confidential &amp; secure.</span>
+</div>
+</div>
+</form>
+<div class="hidden mt-6 p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/70 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200 text-sm" id="booking-success">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-emerald-600">task_alt</span>
+<div>
+<p class="font-bold">Your Consultation Request has been Received!</p>
+<p class="text-xs text-emerald-700 dark:text-emerald-300 mt-0.5">
+                    Our medical receptionist at Apex Health Care Plus, Jajpur will call you in a few minutes to confirm your timing.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Clinic & Community Commitment -->
+<section class="py-16 bg-surface-container-low dark:bg-slate-950" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-6 space-y-5">
+<span class="inline-block bg-teal-100 dark:bg-teal-950 text-primary text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full">
+            Our Community Vision
+          </span>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight leading-snug">
+            Setting New Standards for Healing in Jajpur
+          </h2>
+<p class="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
+            Apex Health Care Plus was founded to address the critical need for advanced diagnostic and clinical medical treatments in Jajpur, eliminating the stress and expense of traveling to distant cities for routine care.
+          </p>
+<div class="space-y-3 pt-2">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900/60 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+<strong>Empathetic Medical Team:</strong> Experienced senior physicians and caring nurses who listen attentively to your health worries.
+              </p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900/60 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<p class="text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+<strong>Honest &amp; Transparent Billing:</strong> Clear diagnostics and package rates without unexpected medical add-ons.
+              </p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="p-6 rounded-3xl bg-white dark:bg-card-dark border border-slate-200/80 dark:border-slate-800 shadow-xs">
+<span class="material-symbols-outlined text-primary text-3xl mb-2">home_health</span>
+<h4 class="font-bold text-slate-900 dark:text-white text-base">Community First</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+              Regular health camps, subsidized wellness packages, and educational screenings across Jajpur.
+            </p>
+</div>
+<div class="p-6 rounded-3xl bg-white dark:bg-card-dark border border-slate-200/80 dark:border-slate-800 shadow-xs">
+<span class="material-symbols-outlined text-emerald-600 text-3xl mb-2">vital_signs</span>
+<h4 class="font-bold text-slate-900 dark:text-white text-base">Continuous Monitoring</h4>
+<p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5 leading-relaxed">
+              Post-consultation follow-up via WhatsApp to ensure your recovery is progressing comfortably.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Warm Footer with Retained Clinic Details -->
+<footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
+<div class="lg:col-span-2 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center text-white">
+<span class="material-symbols-outlined fill text-2xl">favorite</span>
+</div>
+<span class="text-2xl font-black text-white tracking-tight">
+              Apex Health<span class="text-teal-400 ml-1.5">Care Plus</span>
+</span>
+</div>
+<p class="text-sm text-slate-400 max-w-sm leading-relaxed">
+            Apex Health Care Plus provides reliable, patient-centered clinical care, high-precision digital X-Ray imaging, and round-the-clock emergency medical support in Jajpur, Odisha.
+          </p>
+<div class="pt-2 flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center gap-2 bg-emerald-600/20 hover:bg-emerald-600 text-emerald-400 hover:text-white px-3.5 py-2 rounded-xl text-xs font-semibold transition-colors border border-emerald-600/30" href="https://wa.me/918917576318" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>WhatsApp: 8917576318</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-rose-600/20 hover:bg-rose-600 text-rose-400 hover:text-white px-3.5 py-2 rounded-xl text-xs font-semibold transition-colors border border-rose-600/30" href="tel:8917576318">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>24/7 Helpline: 8917576318</span>
+</a>
+</div>
+</div>
+<div class="space-y-3">
+<h4 class="text-white text-xs font-bold uppercase tracking-wider">Navigation</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Specialized Care</a></li>
+<li><a class="hover:text-primary transition-colors" href="#packages">Health Packages (₹499)</a></li>
+<li><a class="hover:text-primary transition-colors" href="#about">About Our Clinic</a></li>
+<li><a class="hover:text-primary transition-colors" href="#appointment">Book Consultation</a></li>
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="text-white text-xs font-bold uppercase tracking-wider">Departments</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary transition-colors" href="#services">Pediatrics &amp; Child Health</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Cardiology &amp; 2D Echo</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">General Medicine &amp; OPD</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Digital X-Ray &amp; Radiology</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Orthopedics &amp; Joint Care</a></li>
+<li><a class="hover:text-primary transition-colors" href="#services">Operation Theater (OT)</a></li>
+</ul>
+</div>
+<div class="space-y-3">
+<h4 class="text-white text-xs font-bold uppercase tracking-wider">Visit &amp; Contact</h4>
+<div class="text-sm space-y-2.5">
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">location_on</span>
+<span>Near Medical Square / Town Center, Jajpur, Odisha</span>
+</p>
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">call</span>
+<a class="hover:text-white font-medium" href="tel:8917576318">8917576318</a>
+</p>
+<p class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">mail</span>
+<a class="hover:text-white" href="mailto:apexhealthcareplus@gmail.com">apexhealthcareplus@gmail.com</a>
+</p>
+<div class="pt-2 text-xs border-t border-slate-800 text-slate-500">
+<span class="block font-semibold text-slate-300">OPD Timings:</span>
+<span>Daily: 8:00 AM – 9:00 PM</span><br/>
+<span class="text-emerald-400 font-semibold">24/7 Emergency &amp; Ambulance Support</span>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+<p>© <span id="current-year"></span> Apex Health Care Plus. All rights reserved. Medical Square, Jajpur, Odisha.</p>
+<div class="flex items-center gap-6">
+<a class="hover:text-slate-400" href="#">Privacy Policy</a>
+<a class="hover:text-slate-400" href="#">Patient Terms</a>
+<a class="hover:text-slate-400 text-teal-400 font-semibold" href="#appointment">Book Appointment</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    themeToggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+
+    function handleBooking() {
+      const name = document.getElementById('name').value;
+      const phone = document.getElementById('phone').value;
+      const dept = document.getElementById('department').value;
+      const date = document.getElementById('date').value;
+
+      if (!name || !phone || !dept || !date) {
+        alert('Please fill out all required fields.');
+        return;
+      }
+
+      const successBox = document.getElementById('booking-success');
+      successBox.classList.remove('hidden');
+      successBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      setTimeout(() => {
+        document.getElementById('appointment-form').reset();
+      }, 1000);
+    }
+  </script>
+</body></html>

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apex Hospital &amp; Diagnostics — Modern Clinical Excellence &amp; Compassionate Healing</title>
+  <meta name="description" content="Experience modern medical excellence at Apex Hospital &amp; Diagnostics. State-of-the-art diagnostics, pediatric care, cardiology, radiology, orthopedics, ICU, and surgical suites in Jajpur."/>
+  
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-content">
+      <div class="preloader-brand">
+        <div class="neon-pulse-ring"></div>
+        <span class="brand-text">APEX HOSPITAL</span>
+      </div>
+      <div class="preloader-track">
+        <div id="loaderBar" class="preloader-fill"></div>
+      </div>
+      <div class="preloader-status-row">
+        <span id="loaderStatus">Initializing scroll-driven facility experience...</span>
+        <span id="loaderPercent">0%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M2 12h20M12 2a10 10 0 0 1 10 10M2 12a10 10 0 0 1 10-10"/>
+          </svg>
+        </div>
+        <div class="logo-brand">
+          <span class="brand-apex">APEX</span>
+          <span class="brand-sub">HOSPITAL &amp; DIAGNOSTICS</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-neon-nav">
+          <span>Book Appointment</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- MOBILE HAMBURGER MENU (visible ≤ 1024px) -->
+      <button type="button" id="navToggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION WITH SCROLL-DRIVEN VIDEO SCRUB & COMPACT CENTER CARD -->
+  <section id="hero" class="hero-section">
+    <!-- STICKY VIEWPORT CONTAINER FOR SMOOTH FRAME-BY-FRAME SCRUBBING -->
+    <div class="hero-sticky-wrap">
+      
+      <!-- BACKGROUND CANVAS (SCRUBBED VIA SCROLL) -->
+      <div class="hero-media-wrapper">
+        <canvas id="heroVideoCanvas"></canvas>
+        <div class="hero-gradient-overlay"></div>
+      </div>
+
+      <!-- CENTER HERO TEXT FLOATING DIRECTLY OVER THE VIDEO (100% TRANSPARENT, NO CARD) FADES ON SCROLL > 20% -->
+      <div class="hero-center-container" id="heroCenterOverlay">
+        <!-- COMPACT THREE-LINE TITLE -->
+        <h1 class="hero-title">
+          <span class="hero-line hero-line-white">Compassionate Health</span>
+          <span class="hero-line hero-line-cerulean">Better Health</span>
+          <span class="hero-line hero-line-neon">Stronger Tomorrow</span>
+        </h1>
+
+        <p class="hero-desc">
+          Pioneering advanced diagnostics, clinical mastery, and patient-centered hospitality in a state-of-the-art healing environment.
+        </p>
+
+        <div class="hero-btn-group">
+          <a href="#contact" class="btn btn-hero-primary">
+            <span>Schedule Consultation</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#services" class="btn btn-hero-secondary">
+            <span>Explore Services</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- SCROLL INDICATOR -->
+      <div class="hero-scroll-indicator" id="heroScrollHint">
+        <span class="scroll-label">Scroll Down</span>
+        <svg class="scroll-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M7 10l5 5 5-5"/>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION WITH TREATMENT CARDS + 2ND & 3RD SECTION MICRO-FAQS -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Clinical Departments</div>
+        <h2 class="section-title">Specialized Care Designed Around You</h2>
+        <p class="section-subtitle">
+          From preventative wellness to acute diagnostic interventions, our departments combine world-class medical science with compassionate personal attention.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        
+        <!-- SERVICE 1: PEDIATRICS -->
+        <article class="service-card group">
+          <div class="service-image-box">
+            <video
+              src="https://res.cloudinary.com/dzesx9h0v/video/upload/v1794219416/Doctor_talking_to_child_b58bccf7_1080p_qnls7q.mp4"
+              class="service-video"
+              autoplay muted loop playsinline preload="auto"
+            ></video>
+            <div class="service-img-overlay"></div>
+            <span class="service-tag tag-neon">Pediatrics &amp; Child Health</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-heading">Pediatrics &amp; Adolescent Health</h3>
+            <p class="service-text">
+              Gentle, child-centered clinical consultations, routine developmental milestones tracking, comprehensive immunizations, and pediatric urgent triage.
+            </p>
+            <ul class="service-bullets">
+              <li><span class="bullet-dot"></span>Routine &amp; Advanced Immunizations</li>
+              <li><span class="bullet-dot"></span>Developmental &amp; Nutritional Assessments</li>
+              <li><span class="bullet-dot"></span>24/7 Pediatric Emergency Support</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#contact" class="service-action-link">
+                <span>Book Pediatric Visit</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SERVICE 2: CARDIOLOGY WITH INTERACTIVE COLLAPSIBLE FAQ -->
+        <article class="service-card group">
+          <div class="service-image-box">
+            <video
+              src="https://res.cloudinary.com/dzesx9h0v/video/upload/v1794219402/Doctor_reviewing_ECG_on_monitor_d0dff736_wfizkj.mp4"
+              class="service-video"
+              autoplay muted loop playsinline preload="auto"
+            ></video>
+            <div class="service-img-overlay"></div>
+            <span class="service-tag tag-cerulean">Cardiovascular Medicine</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-heading">Cardiology &amp; Vascular Diagnostics</h3>
+            <p class="service-text">
+              Cutting-edge 12-lead digital electrocardiography, color Doppler echocardiograms, hypertension management, and preventative vascular health consultations.
+            </p>
+            <ul class="service-bullets">
+              <li><span class="bullet-dot"></span>12-Lead High-Definition Digital ECG</li>
+              <li><span class="bullet-dot"></span>2D Color Doppler Echocardiography</li>
+              <li><span class="bullet-dot"></span>Hypertension &amp; Preventative Cardiac Care</li>
+            </ul>
+
+            <!-- INTERACTIVE COLLAPSIBLE FAQ (2ND TREATMENT SECTION) -->
+            <div class="card-micro-faq">
+              <button type="button" class="micro-faq-toggle" onclick="toggleMicroFaq(this)">
+                <span class="micro-faq-title">
+                  <span class="material-symbols-outlined micro-faq-icon">help_outline</span>
+                  <span>Cardiology FAQs &amp; Preparation</span>
+                </span>
+                <span class="material-symbols-outlined micro-faq-chevron">expand_more</span>
+              </button>
+              <div class="micro-faq-body">
+                <div class="micro-faq-item">
+                  <strong class="q-title">Q: When is a cardiac screening or ECG recommended?</strong>
+                  <p class="a-desc">A: If you experience chest tightness, shortness of breath, unexplained palpitations, severe dizziness, or have a family history of heart disease and chronic hypertension.</p>
+                </div>
+                <div class="micro-faq-item">
+                  <strong class="q-title">Q: Is fasting required before an ECG or 2D Echo?</strong>
+                  <p class="a-desc">A: Standard ECG and 2D Echocardiograms do not require fasting. Fasting is only necessary if your visit includes comprehensive lipid blood tests.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-footer">
+              <a href="#contact" class="service-action-link">
+                <span>Book Cardiac Screen</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SERVICE 3: GENERAL OPD WITH INTERACTIVE COLLAPSIBLE FAQ -->
+        <article class="service-card group">
+          <div class="service-image-box">
+            <video
+              src="https://res.cloudinary.com/dzesx9h0v/video/upload/v1794219407/Doctor_conducting_patient_consul__e08b4e9d_u6nmqv.mp4"
+              class="service-video"
+              autoplay muted loop playsinline preload="auto"
+            ></video>
+            <div class="service-img-overlay"></div>
+            <span class="service-tag tag-neon">General Medicine &amp; OPD</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-heading">Primary Care &amp; General Medicine</h3>
+            <p class="service-text">
+              Comprehensive doctor consultations, chronic illness treatment (diabetes, thyroid, blood pressure), acute fever management, and lifestyle wellness guidance.
+            </p>
+            <ul class="service-bullets">
+              <li><span class="bullet-dot"></span>Daily Outpatient OPD (8:00 AM – 9:00 PM)</li>
+              <li><span class="bullet-dot"></span>Chronic Disease Management Protocols</li>
+              <li><span class="bullet-dot"></span>Prompt Walk-In Consultations</li>
+            </ul>
+
+            <!-- INTERACTIVE COLLAPSIBLE FAQ (3RD TREATMENT SECTION) -->
+            <div class="card-micro-faq">
+              <button type="button" class="micro-faq-toggle" onclick="toggleMicroFaq(this)">
+                <span class="micro-faq-title">
+                  <span class="material-symbols-outlined micro-faq-icon">help_outline</span>
+                  <span>General OPD FAQs &amp; Timings</span>
+                </span>
+                <span class="material-symbols-outlined micro-faq-chevron">expand_more</span>
+              </button>
+              <div class="micro-faq-body">
+                <div class="micro-faq-item">
+                  <strong class="q-title">Q: Can I walk in without a prior appointment?</strong>
+                  <p class="a-desc">A: Yes, our general outpatient department welcomes walk-ins daily from 8:00 AM to 9:00 PM. Prior booking is advised for expedited zero-wait entry.</p>
+                </div>
+                <div class="micro-faq-item">
+                  <strong class="q-title">Q: What documents should I bring for consultation?</strong>
+                  <p class="a-desc">A: Please bring any prior medical records, recent diagnostic blood/X-ray reports, and a list of current medications to assist the physician.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="service-footer">
+              <a href="#contact" class="service-action-link">
+                <span>Consult Senior Doctor</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SERVICE 4: DIGITAL X-RAY & RADIOLOGY -->
+        <article class="service-card group">
+          <div class="service-image-box">
+            <video
+              src="https://res.cloudinary.com/dzesx9h0v/video/upload/v1794219413/Doctor_analyzing_scans_in_hospital_cef1ddbf_npmhux.mp4"
+              class="service-video"
+              autoplay muted loop playsinline preload="auto"
+            ></video>
+            <div class="service-img-overlay"></div>
+            <span class="service-tag tag-cerulean">Radiology &amp; Diagnostics</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-heading">Digital X-Ray &amp; Precision Radiology</h3>
+            <p class="service-text">
+              Ultra-low-dose digital radiography, high-resolution ultrasonography (USG), and automated pathology tests with secure same-day digital report turnaround.
+            </p>
+            <ul class="service-bullets">
+              <li><span class="bullet-dot"></span>Direct Digital Low-Dose Radiography</li>
+              <li><span class="bullet-dot"></span>High-Resolution Ultrasonography (USG)</li>
+              <li><span class="bullet-dot"></span>Digital Same-Day Reports to WhatsApp</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#contact" class="service-action-link">
+                <span>Schedule Imaging Scan</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SERVICE 5: ORTHOPEDICS -->
+        <article class="service-card group">
+          <div class="service-image-box">
+            <video
+              src="https://res.cloudinary.com/dzesx9h0v/video/upload/v1794219221/Doctor_reviewing_joint_restorati__7080e0ea_hqcqnb.mp4"
+              class="service-video"
+              autoplay muted loop playsinline preload="auto"
+            ></video>
+            <div class="service-img-overlay"></div>
+            <span class="service-tag tag-neon">Orthopedics &amp; Spine</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-heading">Orthopedics &amp; Joint Restoration</h3>
+            <p class="service-text">
+              Specialized treatment for bone fractures, degenerative arthritis, persistent back pain, sports trauma injuries, and dedicated physical rehabilitation therapy.
+            </p>
+            <ul class="service-bullets">
+              <li><span class="bullet-dot"></span>Trauma Fracture Reduction &amp; Casting</li>
+              <li><span class="bullet-dot"></span>Arthritis &amp; Degenerative Joint Care</li>
+              <li><span class="bullet-dot"></span>Post-Injury Physical Rehabilitation</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#contact" class="service-action-link">
+                <span>Book Orthopedic Slot</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- SERVICE 6: ADVANCED SURGERY -->
+        <article class="service-card group">
+          <div class="service-image-box">
+            <video
+              src="https://res.cloudinary.com/dzesx9h0v/video/upload/v1794203420/Surgeon_in_operating_theater_6cd9af08_wky0ok.mp4"
+              class="service-video"
+              autoplay muted loop playsinline preload="auto"
+            ></video>
+            <div class="service-img-overlay"></div>
+            <span class="service-tag tag-cerulean">Modular Operation Theater</span>
+          </div>
+          <div class="service-body">
+            <h3 class="service-heading">Minimally Invasive &amp; General Surgery</h3>
+            <p class="service-text">
+              State-of-the-art laminar air-flow surgical suites prepared for daycare operations, laparoscopic procedures, emergency trauma management, and post-op care.
+            </p>
+            <ul class="service-bullets">
+              <li><span class="bullet-dot"></span>Laminar Flow Sterile Surgical Suites</li>
+              <li><span class="bullet-dot"></span>Minimally Invasive Laparoscopic Surgery</li>
+              <li><span class="bullet-dot"></span>Continuous Post-Operative Telemetry</li>
+            </ul>
+            <div class="service-footer">
+              <a href="#contact" class="service-action-link">
+                <span>Surgical Consultation</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & CLINICAL ADVANTAGE SECTION -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="about-grid">
+        
+        <!-- LEFT: EDITORIAL COPY -->
+        <div class="about-content">
+          <div class="badge-tag">Our Clinical Philosophy</div>
+          <h2 class="section-title text-left">Setting New Standards for Healing and Dignity</h2>
+          <p class="about-lead">
+            Apex Hospital &amp; Diagnostics was established to provide patients with immediate access to cutting-edge medicine, empathetic specialists, and transparent care right in Jajpur.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feat-item">
+              <div class="feat-icon-cerulean">
+                <span class="material-symbols-outlined">verified_user</span>
+              </div>
+              <div>
+                <h4 class="feat-title">Physician-Led Clinical Mastery</h4>
+                <p class="feat-desc">Consult with experienced senior doctors and attentive healthcare coordinators who prioritize your long-term recovery.</p>
+              </div>
+            </div>
+
+            <div class="about-feat-item">
+              <div class="feat-icon-neon">
+                <span class="material-symbols-outlined">hotel_class</span>
+              </div>
+              <div>
+                <h4 class="feat-title">Ambient, Zero-Wait Hospitality</h4>
+                <p class="feat-desc">From digital pre-registration to private consultation suites, our facility is engineered to minimize stress and maximize peace of mind.</p>
+              </div>
+            </div>
+
+            <div class="about-feat-item">
+              <div class="feat-icon-cerulean">
+                <span class="material-symbols-outlined">e911_emergency</span>
+              </div>
+              <div>
+                <h4 class="feat-title">24/7 Critical Trauma Response</h4>
+                <p class="feat-desc">Immediate triage protocols, dedicated critical stabilization units, and continuous telemetry monitoring around the clock.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: GLASS CARDS STATS & TRUST -->
+        <div class="about-stats-panel">
+          <div class="stats-glass-card">
+            <div class="stat-highlight">
+              <span class="stat-num neon-gradient-text">12,000+</span>
+              <span class="stat-label">Patients Treated with Dignity</span>
+            </div>
+            <div class="stat-divider"></div>
+            
+            <div class="stats-grid-mini">
+              <div class="mini-stat">
+                <span class="mini-num cerulean-gradient-text">15+</span>
+                <span class="mini-label">Specialist Consultants</span>
+              </div>
+              <div class="mini-stat">
+                <span class="mini-num neon-gradient-text">99.8%</span>
+                <span class="mini-label">Patient Satisfaction</span>
+              </div>
+              <div class="mini-stat">
+                <span class="mini-num cerulean-gradient-text">&lt; 15 min</span>
+                <span class="mini-label">Direct OPD Entry</span>
+              </div>
+              <div class="mini-stat">
+                <span class="mini-num neon-gradient-text">24 / 7</span>
+                <span class="mini-label">ICU &amp; Ambulance Support</span>
+              </div>
+            </div>
+
+            <!-- HOSPITAL ASSURANCE BANNER -->
+            <div class="assurance-banner">
+              <div class="assurance-icon">
+                <span class="material-symbols-outlined">health_and_safety</span>
+              </div>
+              <div class="assurance-text">
+                <strong>Certified Clean Environment</strong>
+                <p>Equipped with positive pressure HEPA filtration and medical sterilization standards.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MEET YOUR DOCTORS SECTION (CIRCULAR GLOWING VIDEO PROFILES, AUTOPLAY WITH AUDIO ON SCROLL) -->
+  <section id="doctors" class="section doctors-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Senior Consultant Panel</div>
+        <h2 class="section-title">Meet Your Doctors</h2>
+        <p class="section-subtitle">
+          Introducing the senior consultants leading patient care at Apex Hospital &amp; Diagnostics — experienced specialists dedicated to compassionate, precise healing.
+        </p>
+      </div>
+
+      <div class="doctors-grid">
+        <!-- DOCTOR 1 -->
+        <div class="doctor-card">
+          <div class="doctor-video-ring">
+            <video
+              src="https://res.cloudinary.com/dzesx9h0v/video/upload/v1794203736/Doctor_speaking_in_hospital_751a3925_f24qcc.mp4"
+              class="doctor-video"
+              muted playsinline preload="metadata"
+            ></video>
+          </div>
+          <h3 class="doctor-name">Dr. Nihar Ranjan Parida</h3>
+          <p class="doctor-qualification">MBBS, MD - General Medicine (Senior Consultant Physician)</p>
+        </div>
+
+        <!-- DOCTOR 2 -->
+        <div class="doctor-card">
+          <div class="doctor-video-ring">
+            <video
+              src="https://res.cloudinary.com/dzesx9h0v/video/upload/v1794219214/Doctor_welcoming_to_health_care_aadfa4ed_sfobvc.mp4"
+              class="doctor-video"
+              muted playsinline preload="metadata"
+            ></video>
+          </div>
+          <h3 class="doctor-name">Dr. Santosini Rao</h3>
+          <p class="doctor-qualification">MBBS, MS - Obstetrics &amp; Gynaecology</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEDICATED SEPARATE FAQ SECTION -->
+  <section id="faq" class="section faq-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Official Information</div>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Essential details on our medical departments, in-house diagnostics, and front-desk contact information at Apex Hospital &amp; Diagnostics.
+        </p>
+      </div>
+
+      <div class="faq-accordion-container">
+        
+        <!-- FAQ 1: DEPARTMENTS & SERVICES -->
+        <div class="faq-item active">
+          <button type="button" class="faq-question-btn" onclick="toggleMainFaq(this)">
+            <span class="faq-q-text">What medical departments and services are available at Apex Hospital &amp; Diagnostics?</span>
+            <span class="material-symbols-outlined faq-chevron-icon">expand_more</span>
+          </button>
+          <div class="faq-answer-pane">
+            <p class="faq-a-text">
+              We offer a comprehensive range of specialties including Operation Theatre &amp; ICU, Obstetrics &amp; Gynaecology, Paediatrics, General Surgery, Gastroenterology, Internal Medicine, Orthopaedics &amp; Joint Replacement Surgery, Urology, Oncology, Cardiology, Nephrology, Neurology, Psychiatry, Endocrinology, ENT/Head &amp; Neck Surgery, and Pulmonology.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 2: DIAGNOSTIC TESTS & FACILITIES -->
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn" onclick="toggleMainFaq(this)">
+            <span class="faq-q-text">What diagnostic tests and facilities are available on-site?</span>
+            <span class="material-symbols-outlined faq-chevron-icon">expand_more</span>
+          </button>
+          <div class="faq-answer-pane">
+            <p class="faq-a-text">
+              Our facility is equipped with advanced diagnostic tests including CT Scan, Endoscopy, Ultrasound, Pathology (Blood, Urine, Stool), ECG, ECHO, NCV, Digital X-ray, and an in-house Pharmacy.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ 3: LOCATION & CONTACT -->
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn" onclick="toggleMainFaq(this)">
+            <span class="faq-q-text">Where is the hospital located and how can we contact the front desk?</span>
+            <span class="material-symbols-outlined faq-chevron-icon">expand_more</span>
+          </button>
+          <div class="faq-answer-pane">
+            <p class="faq-a-text">
+              Apex Hospital &amp; Diagnostics is located at Plot No-1228, Mallikapur (Near Budha Bridge), Jajpur Town-755007. You can contact our helpline numbers at 7608920555, 7608917333 or email us at info@apexhealthplus.com.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT, LOCATION & GOOGLE MAPS SECTION -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-tag">Seamless Scheduling &amp; Location</div>
+        <h2 class="section-title">Visit Us or Schedule a Consultation</h2>
+        <p class="section-subtitle">
+          Directly request an appointment with our specialist medical team, or navigate directly to our facility in Jajpur Town.
+        </p>
+      </div>
+
+      <!-- APPOINTMENT BOOKING & CONTACT INFO -->
+      <div class="booking-layout">
+        
+        <!-- LEFT: CLINIC INFO & CONTACT HOTLINES -->
+        <div class="contact-info-card">
+          <div class="info-card-header">
+            <div class="pulse-beacon"></div>
+            <h3>Direct Patient Desk</h3>
+          </div>
+          <p class="info-text">
+            Need urgent assistance, directions, or immediate consultations? Reach out directly to our coordinators.
+          </p>
+
+          <div class="hotline-buttons">
+            <a href="tel:+918018807797" class="hotline-btn cerulean-hotline">
+              <span class="material-symbols-outlined">call</span>
+              <div>
+                <span class="hotline-label">Helpline Desk</span>
+                <strong class="hotline-val">8018807797</strong>
+              </div>
+            </a>
+
+            <a href="https://wa.me/918018807797" target="_blank" rel="noopener noreferrer" class="hotline-btn neon-hotline">
+              <span class="material-symbols-outlined">chat</span>
+              <div>
+                <span class="hotline-label">WhatsApp Fast Help</span>
+                <strong class="hotline-val">Chat on WhatsApp</strong>
+              </div>
+            </a>
+          </div>
+
+          <div class="clinic-details-block">
+            <div class="detail-row">
+              <span class="material-symbols-outlined">location_on</span>
+              <div>
+                <strong>Official Address</strong>
+                <p>Plot No-1228, Mallikapur (Near Budha Bridge), Jajpur Town-755007</p>
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <span class="material-symbols-outlined">schedule</span>
+              <div>
+                <strong>Operating Hours</strong>
+                <p>OPD Clinics: Daily 8:00 AM – 9:00 PM</p>
+                <p class="emergency-notice">Emergency, Ambulance, ICU &amp; OT: Open 24/7</p>
+              </div>
+            </div>
+
+            <div class="detail-row">
+              <span class="material-symbols-outlined">mail</span>
+              <div>
+                <strong>Email Inquiries</strong>
+                <p>info@apexhealthplus.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: STREAMLINED APPOINTMENT FORM -->
+        <div class="booking-form-card">
+          <form id="appointmentForm" onsubmit="submitBookingForm(event);">
+            <div class="form-grid">
+              
+              <div class="form-field">
+                <label for="patientName">Patient Full Name *</label>
+                <div class="input-wrap">
+                  <span class="material-symbols-outlined field-icon">person</span>
+                  <input type="text" id="patientName" placeholder="e.g. Ramesh Mohapatra" required/>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="patientPhone">Phone / WhatsApp Number *</label>
+                <div class="input-wrap">
+                  <span class="material-symbols-outlined field-icon">call</span>
+                  <input type="tel" id="patientPhone" pattern="[0-9]{10}" placeholder="10-digit number (e.g. 7608920555)" required/>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="departmentSelect">Clinical Department *</label>
+                <div class="input-wrap">
+                  <span class="material-symbols-outlined field-icon">medical_services</span>
+                  <select id="departmentSelect" required>
+                    <option value="">Select Specialty</option>
+                    <option value="Paediatrics">Paediatrics &amp; Adolescent Health</option>
+                    <option value="Cardiology">Cardiology &amp; Vascular Diagnostics</option>
+                    <option value="Internal Medicine">Internal Medicine &amp; Primary OPD</option>
+                    <option value="Obstetrics & Gynaecology">Obstetrics &amp; Gynaecology</option>
+                    <option value="General Surgery">General Surgery &amp; Laparoscopy</option>
+                    <option value="Orthopaedics">Orthopaedics &amp; Joint Replacement</option>
+                    <option value="Diagnostic Radiology">CT Scan, USG &amp; Digital X-Ray</option>
+                    <option value="Gastroenterology">Gastroenterology &amp; Endoscopy</option>
+                    <option value="Neurology">Neurology &amp; NCV</option>
+                    <option value="Urology">Urology &amp; Nephrology</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="visitDate">Preferred Appointment Date *</label>
+                <div class="input-wrap">
+                  <span class="material-symbols-outlined field-icon">calendar_today</span>
+                  <input type="date" id="visitDate" required/>
+                </div>
+              </div>
+
+              <div class="form-field full-width">
+                <label for="visitTime">Preferred Time Slot *</label>
+                <div class="input-wrap">
+                  <span class="material-symbols-outlined field-icon">schedule</span>
+                  <select id="visitTime" required>
+                    <option value="Morning (08:30 AM - 12:00 PM)">Morning Clinic (08:30 AM - 12:00 PM)</option>
+                    <option value="Afternoon (12:30 PM - 04:30 PM)">Afternoon Clinic (12:30 PM - 04:30 PM)</option>
+                    <option value="Evening (05:00 PM - 08:30 PM)">Evening Clinic (05:00 PM - 08:30 PM)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-field full-width">
+                <label for="symptomsNotes">Health Notes or Specific Symptoms (Optional)</label>
+                <div class="input-wrap">
+                  <textarea id="symptomsNotes" rows="3" placeholder="Briefly describe symptoms, prior prescriptions, or specific requests..."></textarea>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-submit-neon">
+                <span>Confirm Appointment Slot</span>
+                <span class="material-symbols-outlined">task_alt</span>
+              </button>
+              <div class="form-privacy-note">
+                <span class="material-symbols-outlined">lock</span>
+                <span>Your medical information is strictly confidential and protected.</span>
+              </div>
+            </div>
+          </form>
+
+          <!-- SUCCESS STATE (SAVED TO SUPABASE) -->
+          <div id="bookingSuccessBox" class="booking-success-box" style="display: none;">
+            <div class="success-icon-badge">
+              <span class="material-symbols-outlined">check_circle</span>
+            </div>
+            <h3 id="bookingSuccessTitle">Appointment Confirmed</h3>
+            <p id="bookingSuccessMessage">
+              Your appointment has been saved successfully. Our patient desk will call your number shortly to confirm the exact scheduling and arrival instructions.
+            </p>
+            <button type="button" class="btn btn-glass-sm" onclick="resetBookingForm()">
+              <span>Book Another Consultation</span>
+            </button>
+          </div>
+
+          <!-- ERROR STATE (SAVING FAILED) -->
+          <div id="bookingErrorBox" class="booking-error-box" style="display: none;">
+            <div class="error-icon-badge">
+              <span class="material-symbols-outlined">error</span>
+            </div>
+            <h3>Booking Not Saved</h3>
+            <p id="bookingErrorText"></p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- GOOGLE MAPS INTEGRATION CARD -->
+      <div class="map-card-container">
+        <div class="map-card-header">
+          <div class="map-header-left">
+            <span class="material-symbols-outlined map-header-icon">near_me</span>
+            <div>
+              <h3 class="map-title">Hospital Location &amp; Directions</h3>
+              <p class="map-subtitle">Plot No-1228, Mallikapur (Near Budha Bridge), Jajpur Town-755007</p>
+            </div>
+          </div>
+          <a href="https://maps.google.com/?q=APEX+HEALTH+PLUS+Jajpur" target="_blank" rel="noopener noreferrer" class="btn btn-map-navigate">
+            <span>Open in Google Maps</span>
+            <span class="material-symbols-outlined">open_in_new</span>
+          </a>
+        </div>
+        <div class="map-embed-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477328.3576384609!2d85.96554294320863!3d20.826545400000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1be300498acaed%3A0x86b606f170f1c892!2sAPEX%20HEALTH%20PLUS!5e0!3m2!1sen!2sin!4v1794130945182!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LUXURY HIGH-CONTRAST FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <div class="nav-logo">
+            <div class="logo-icon-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M2 12h20M12 2a10 10 0 0 1 10 10M2 12a10 10 0 0 1 10-10"/>
+              </svg>
+            </div>
+            <div class="logo-brand">
+              <span class="brand-apex">APEX</span>
+              <span class="brand-sub">HOSPITAL &amp; DIAGNOSTICS</span>
+            </div>
+          </div>
+          <p class="footer-bio">
+            Redefining clinical care through advanced diagnostics, compassionate doctors, and modern healthcare infrastructure in Jajpur.
+          </p>
+          <div class="footer-contact-pills">
+            <a href="tel:7608920555" class="f-pill f-pill-cerulean">
+              <span class="material-symbols-outlined">call</span>
+              <span>7608920555</span>
+            </a>
+            <a href="tel:7608917333" class="f-pill f-pill-cerulean">
+              <span class="material-symbols-outlined">call</span>
+              <span>7608917333</span>
+            </a>
+            <a href="https://wa.me/917608920555" target="_blank" rel="noopener noreferrer" class="f-pill f-pill-neon">
+              <span class="material-symbols-outlined">chat</span>
+              <span>WhatsApp Care</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#services">Specialized Departments</a></li>
+            <li><a href="#about">About Our Facility</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+            <li><a href="#contact">Book Consultation &amp; Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Departments</h4>
+          <ul class="footer-links-list">
+            <li><a href="#services">Paediatrics &amp; Child Health</a></li>
+            <li><a href="#services">Cardiology &amp; Doppler Echo</a></li>
+            <li><a href="#services">Internal Medicine &amp; OPD</a></li>
+            <li><a href="#services">CT Scan &amp; Digital X-Ray</a></li>
+            <li><a href="#services">Orthopaedics &amp; Joint Care</a></li>
+            <li><a href="#services">Modular OT &amp; ICU Care</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Center Location</h4>
+          <p class="footer-loc">
+            <strong>Apex Hospital &amp; Diagnostics</strong><br>
+            Plot No-1228, Mallikapur (Near Budha Bridge)<br>
+            Jajpur Town-755007
+          </p>
+          <div class="footer-timings">
+            <span>OPD: 8:00 AM – 9:00 PM Daily</span>
+            <span class="emergency-highlight">24/7 Emergency, ICU &amp; Ambulance</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear"></span> Apex Hospital &amp; Diagnostics. All rights reserved. High-End Medical Care.</p>
+        <div class="footer-legal">
+          <a href="#hero">Privacy Policy</a>
+          <a href="#hero">Patient Rights</a>
+          <a href="#hero">Quality Standards</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING PULSING CALL BUTTON (BOTTOM-RIGHT) -->
+  <a href="tel:+918018807797" class="floating-call-btn" aria-label="Call Apex Health Care now at +91 80188 07797">
+    <span class="material-symbols-outlined">call</span>
+    <span class="floating-call-label">Call Now</span>
+  </a>
+
+  <!-- Cache-busted so browsers always load the latest booking engine -->
+  <script src="script.js?v=supabase-fallback-2"></script>
+</body>
+</html>
